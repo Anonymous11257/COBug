@@ -188,7 +188,7 @@ manual_audit_results.csv: Contains logs of the manual checks for each injected b
 
 ---
 ### **8. Evaluation and Results**
-Step-6
+Step-6.1
 Execute:
 
     python analyze_results.py
@@ -211,6 +211,32 @@ repo_win_counts.csv: Counts of how many times each model was the best.
 model_rankings.csv: Ranking of models based on their evaluation metrics.
 
 final_observations.txt: Contains final observations and conclusions from the analysis.
+
+Next 
+
+Step-6.2:
+Execute:
+
+    python calculateCliffsDelta.py
+Code File: calculateCliffsDelta.py
+
+
+#### **Cliff's Delta Effect Size and Wilcoxon Test Results**
+In this study, we calculate **Cliff’s delta** to assess the **practical significance** of the differences between various models used for bug localization (IR vs IR+LR, IR vs IR+RF, IR+LR vs IR+RF). Along with **p-values** from the **Wilcoxon signed-rank test**, **Cliff’s delta** provides a clearer understanding of how meaningful the differences are between models in practice.
+
+
+
+#### **Comparison Results:**
+
+The resuts after executing calculateCliffsDelta.py (results can be seen in Tables folder)summarize the **Wilcoxon signed-rank test** results and the **Cliff's delta** effect sizes for each comparison across different LLM settings (Qwen, CodeLLaMA, and DeepSeek).
+
+##### **Cliff's Delta Interpretation:**
+- **δ < 0.147**: Negligible effect
+- **0.147 ≤ δ < 0.33**: Small effect
+- **0.33 ≤ δ < 0.474**: Medium effect
+- **δ ≥ 0.474**: Large effect
+
+
 
 ---
 ### **9. Analyzing the Results**
