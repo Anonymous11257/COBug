@@ -217,8 +217,8 @@ Next
 Step-6.2:
 Execute:
 
-    python calculateCliffsDelta.py
-Code File: calculateCliffsDelta.py
+    python calculate_cliffs_delta.py
+Code File: calculate_cliffs_delta.py
 
 
 #### **Cliff's Delta Effect Size and Wilcoxon Test Results**
@@ -228,7 +228,7 @@ In this study, we calculate **Cliff’s delta** to assess the **practical signif
 
 #### **Comparison Results:**
 
-The resuts after executing calculateCliffsDelta.py (results can be seen in Tables folder)summarize the **Wilcoxon signed-rank test** results and the **Cliff's delta** effect sizes for each comparison across different LLM settings (Qwen, CodeLLaMA, and DeepSeek).
+The resuts after executing calculate_cliffs_delta.py (results can be seen in Tables folder)summarize the **Wilcoxon signed-rank test** results and the **Cliff's delta** effect sizes for each comparison across different LLM settings (Qwen, CodeLLaMA, and DeepSeek).
 
 ##### **Cliff's Delta Interpretation:**
 - **δ < 0.147**: Negligible effect
